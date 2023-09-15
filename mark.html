@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Mark Cheeking Programe using JavaScript</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Container {
+            width: 600px;
+            height: 500px;
+            margin: auto;
+            background: lightgray;
+            margin-top: 5%;
+        }
+
+        .result {
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            padding-top: 8px;
+        }
+
+        .Container h2 {
+            font-size: 30px;
+            line-height: 15px;
+            font-weight: 600;
+            padding-bottom: 95px;
+            font-family: sans-serif;
+            color: darkolivegreen;
+            text-align: center;
+            padding-top: 45px;
+        }
+
+        .Container h4 {
+            text-align: center;
+            font-size: 20px;
+            padding: 18px 0px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .result span {
+            font-size: 38px;
+            color: darkcyan;
+
+
+        }
+
+
+        .result h3 {
+            margin: 35px 0px;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(139, 132, 132);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Container">
+        <h2>This is Your Result !</h2>
+        <h4 id="well"> </h4>
+
+        <div class="result">
+            <span id="show"> </span>
+            <h3 id="fail"> </h3>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        let marks = prompt("Enter your Marks here: ");
+
+
+        if (marks >= 80 && marks <= 100) {
+            well.innerHTML = "Congratulations!";
+            let marks = document.getElementById("marks");
+            show.innerHTML = "You have got GPA-5!";
+        } else if (marks >= 70 && marks <= 80) {
+            well.innerHTML = "Congratulations!";
+            show.innerHTML = "Your GPA is 'A' out of GPA-5";
+        } else if (marks >= 60 && marks <= 70) {
+            well.innerHTML = "Congratulations!";
+            show.innerHTML = "Your GPA is 'A- ' out of GPA-5";
+        } else if (marks >= 50 && marks <= 60) {
+            well.innerHTML = "Congratulations!";
+            show.innerHTML = "Your GPA is 'B' Out of GPA-5";
+        } else if (marks >= 40 && marks <= 50) {
+            well.innerHTML = "Congratulations!";
+            show.innerHTML = "Your GPA is 'B- ' Out of GPA-5";
+        } else if (marks >= 33 && marks <= 40) {
+            well.innerHTML = "Congratulations!";
+            show.innerHTML = "Your GPA is 'C' Out of GPA-5";
+        } else {
+            show.innerHTML = "Opps Your are Faild!"
+            let fail = document.getElementById("fail");
+            fail.innerHTML = "Better Luck Next Time"
+        }
+
+
+    </script>
+
+</body>
+
+</html>
